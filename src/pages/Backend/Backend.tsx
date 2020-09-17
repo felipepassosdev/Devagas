@@ -17,7 +17,7 @@ const Backend: React.FC = () => {
     const [data, setData] = useState<Repository[]>([])
 
     const getApi = async () => {
-        await axios.get(`https://api.github.com/repos/backend-br/vagas/issues`)
+        await axios.get(`/repos/backend-br/vagas/issues`)
             .then(function (response: any) {
                 console.log(response.data)
                 setData(response.data)
