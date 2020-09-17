@@ -19,7 +19,6 @@ const Frontend: React.FC = () => {
     const getApi = async () => {
         await axios.get(`repos/frontendbr/vagas/issues`)
             .then(function (response: any) {
-                console.log(response.data)
                 setData(response.data)
             })
     }

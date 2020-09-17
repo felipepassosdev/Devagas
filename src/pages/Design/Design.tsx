@@ -19,7 +19,6 @@ const Design: React.FC = () => {
     const getApi = async () => {
         await axios.get(`/repos/uxbrasil/vagas/issues`)
             .then(function (response: any) {
-                console.log(response.data)
                 setData(response.data)
             })
     }
@@ -30,7 +29,7 @@ const Design: React.FC = () => {
 
     return (
         <>
-            <Title>Vagas: Backend</Title>
+            <Title>Vagas: UX / UI</Title>
             <Cards>
                 {data.map((repo, index) => (
                     <li key={index}>

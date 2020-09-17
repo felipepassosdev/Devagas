@@ -10,6 +10,7 @@ export const Container = styled.header`
     span {
         color: #fff;
         font-size: 40px;
+        margin-left: 15px;
     }
 
     li {

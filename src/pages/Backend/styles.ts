@@ -31,5 +31,5 @@ export const Cards = styled.ul`
 export const Title = styled.h1`
     color: #fff;
     margin: 20px; 
-
+  
 `;

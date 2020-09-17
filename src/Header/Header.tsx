@@ -7,7 +7,7 @@ function Header() {
   return (
     <Container>
       <nav>
-        <span>Devagas</span>
+        <span>Devagas 💻</span>
       </nav>
       <ul>
         <Link to="/Frontend"><li>Frontend</li></Link>
