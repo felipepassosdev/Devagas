@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios'
+import axios from '../../services/api'
 import { Cards, Title } from './styles';
 
+// import { Container } from './styles';
 
 interface Repository {
     html_url: string,
@@ -12,11 +13,11 @@ interface Repository {
 }
 
 
-const Backend: React.FC = () => {
+const Mobile: React.FC = () => {
     const [data, setData] = useState<Repository[]>([])
-   
+
     const getApi = async () => {
-        await axios.get(`https://api.github.com/repos/androiddevbr/vagas/issues`)
+        await axios.get(`repos/androiddevbr/vagas/issues`)
             .then(function (response: any) {
                 console.log(response.data)
                 setData(response.data)
@@ -48,4 +49,4 @@ const Backend: React.FC = () => {
     );
 }
 
-export default Backend;
+export default Mobile;
