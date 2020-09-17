@@ -7,7 +7,16 @@ export const Container = styled.header`
     align-items: center;
     margin: 50px 0;
 
-    h1 {
-        color: #fff
+    span {
+        color: #fff;
+        font-size: 40px;
+    }
+
+    li {
+        color: #fff;
+        float: left;
+        margin: 20px;
+        font-size: 20px;
+        display: block;
     }
 `;
